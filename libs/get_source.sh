@@ -9,7 +9,7 @@ pushd ..
 ####
 
 if [ ! -d "sing-box" ]; then
-  git clone --no-checkout https://github.com/MatsuriDayo/sing-box.git
+  git clone --no-checkout https://github.com/SagerNet/sing-box.git
 fi
 pushd sing-box
 git checkout "$COMMIT_SING_BOX"
@@ -19,7 +19,7 @@ popd
 ####
 
 if [ ! -d "sing-quic" ]; then
-  git clone --no-checkout https://github.com/MatsuriDayo/sing-quic.git
+  git clone --no-checkout https://github.com/SagerNet/sing-quic.git
 fi
 pushd sing-quic
 git checkout "$COMMIT_SING_QUIC"
