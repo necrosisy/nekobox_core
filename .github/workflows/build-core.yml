@@ -18,7 +18,7 @@ jobs:
         $env:MSYSTEM = 'CLANG64'
         $env:MSYS2_PATH_TYPE = 'inherit'
         git clone https://github.com/necrosisy/nekobox_core.git --recursive
-        cd nekoray
+        cd nekobox_core
         C:\msys64\usr\bin\bash.exe -lc "./libs/get_source.sh"
         C:\msys64\usr\bin\bash.exe -lc "GOOS=windows GOARCH=amd64 bash libs/build_go.sh"
 
@@ -26,4 +26,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with: 
           name: nekobox-core
-          path: '${{ github.workspace }}/nekoray/deployment/windows64/'
+          path: '${{ github.workspace }}/nekobox_core/deployment/windows64/'
